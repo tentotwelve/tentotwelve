@@ -12,6 +12,8 @@ import {
   View
 } from 'react-native';
 
+import Intro from './src/Components/JestTest/Intro';
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',
@@ -33,6 +35,7 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+        <Intro />
       </View>
     );
   }
