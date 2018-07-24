@@ -8,14 +8,15 @@ axios.get(baseUrl)
         let results = Object.values(response.data.result)
         console.log("Total number of results is " + results.length);
         let wines = results.filter(result => result.primary_category === "Wine");
-        let wineTotal = wines.length;
-
-        // stringify the response to write it to a file
-        let fileContent = JSON.stringify(wines)
-        fs.writeFileSync('wines.json', fileContent);
-        console.log("file created, " + wineTotal + " wines written to file");
-
+        writeJSONFile(wines);
      })
      .catch(error => {
         console.log(error);
      });
+
+function writeJSONFile(wines) {
+  let fileContent = JSON.stringify(wines)
+  let wineTotal = wines.length;
+  fs.writeFileSync('wines.json', fileContent);
+  console.log("file created, " + wineTotal + " wines written to file");
+}
