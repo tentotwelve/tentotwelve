@@ -3,8 +3,10 @@ const fs = require('fs');
 
 const baseUrl = "http://lcboapi.com/products"
 const testUrl = "?where=is_vqa&where=has_value_added_promotion&per_page=55&page="
+let pageNumber = 1
+const file = "./wines.json"
 
-axios.get(baseUrl)
+axios.get(baseUrl + testUrl + pageNumber)
      .then(getWines)
      .catch(error => {
         console.log(error);
@@ -20,6 +22,12 @@ function getWines(response) {
 function writeJSONFile(wines) {
   let fileContent = JSON.stringify(wines)
   let wineTotal = wines.length;
-  fs.writeFileSync('wines.json', fileContent);
-  console.log("file created, " + wineTotal + " wines written to file");
+
+  if (fs.statSync(file)) {
+    fs.unlinkSync(file);
+    console.log(`${file} deleted`);
+  }
+
+  fs.appendFileSync(file, fileContent);
+  console.log(`${file} created, ${wineTotal} wines written to file`);
 }
