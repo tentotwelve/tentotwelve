@@ -2,7 +2,7 @@ import express from 'express';
 
 const app = express();
 const fs = require('fs');
-const rawData = fs.readFileSync('wine-selection.json');
+const rawData = fs.readFileSync('wines.json');
 const wines = JSON.parse(rawData);
 
 app.get('/', (req, res) =>

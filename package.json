@@ -9,7 +9,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "express": "^4.16.3",
-    "npm": "^5.8.0",
+    "npm": "^5.10.0",
+    "pryjs": "^1.0.3",
     "react": "16.3.0-alpha.2",
     "react-native": "0.54.2",
     "react-test-renderer": "16.3.0-alpha.2"
