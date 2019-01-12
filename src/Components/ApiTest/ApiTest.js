@@ -9,11 +9,18 @@ export default class ApiTest extends Component {
 	componentWillMount() {
 		axios.get('http://localhost:3000/wines')
             .then(response => this.setState({ wines: response.data.result }));
-	}
+    }
+    // renderPrices() {
+    //     return this.state.wines.map(wine  => wine.price_in_cents);
+    // }
 	renderWines() {
 		// map is array helper function
-		return this.state.wines.map(wine => 
-			<Text key={wine.name}>{wine.name}</Text>
+        return this.state.wines.map(wine => 
+            <View key={wine.name}>
+                <Text>{wine.name}</Text>
+                <Text>{wine.price_in_cents}</Text>
+                {/* <Text>{this.renderPrices()}</Text> */}
+            </View>
 		);
     }
     

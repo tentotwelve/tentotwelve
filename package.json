@@ -24,6 +24,11 @@
     "jest": "22.4.2",
     "nodemon": "^1.17.2"
   },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts/"
+    ]
+  },
   "jest": {
     "preset": "react-native"
   }

@@ -39,9 +39,8 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>NSAppTransportSecurity</key>
-	<!--See http://ste.vn/2015/06/10/configuring-app-transport-security-ios-9-osx-10-11/ -->
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
@@ -52,5 +51,64 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Merriweather-Black.ttf</string>
+		<string>Merriweather-BlackItalic.ttf</string>
+		<string>Merriweather-Bold.ttf</string>
+		<string>Merriweather-BoldItalic.ttf</string>
+		<string>Merriweather-Italic.ttf</string>
+		<string>Merriweather-Light.ttf</string>
+		<string>Merriweather-LightItalic.ttf</string>
+		<string>Merriweather-Regular.ttf</string>
+		<string>Montserrat-Black.ttf</string>
+		<string>Montserrat-BlackItalic.ttf</string>
+		<string>Montserrat-Bold.ttf</string>
+		<string>Montserrat-BoldItalic.ttf</string>
+		<string>Montserrat-ExtraBold.ttf</string>
+		<string>Montserrat-ExtraBoldItalic.ttf</string>
+		<string>Montserrat-ExtraLight.ttf</string>
+		<string>Montserrat-ExtraLightItalic.ttf</string>
+		<string>Montserrat-Italic.ttf</string>
+		<string>Montserrat-Light.ttf</string>
+		<string>Montserrat-LightItalic.ttf</string>
+		<string>Montserrat-Medium.ttf</string>
+		<string>Montserrat-MediumItalic.ttf</string>
+		<string>Montserrat-Regular.ttf</string>
+		<string>Montserrat-SemiBold.ttf</string>
+		<string>Montserrat-SemiBoldItalic.ttf</string>
+		<string>Montserrat-Thin.ttf</string>
+		<string>Montserrat-ThinItalic.ttf</string>
+		<string>PlayfairDisplay-Black.ttf</string>
+		<string>PlayfairDisplay-BlackItalic.ttf</string>
+		<string>PlayfairDisplay-Bold.ttf</string>
+		<string>PlayfairDisplay-BoldItalic.ttf</string>
+		<string>PlayfairDisplay-Italic.ttf</string>
+		<string>PlayfairDisplay-Regular.ttf</string>
+		<string>Roboto-Black.ttf</string>
+		<string>Roboto-BlackItalic.ttf</string>
+		<string>Roboto-Bold.ttf</string>
+		<string>Roboto-BoldItalic.ttf</string>
+		<string>Roboto-Italic.ttf</string>
+		<string>Roboto-Light.ttf</string>
+		<string>Roboto-LightItalic.ttf</string>
+		<string>Roboto-Medium.ttf</string>
+		<string>Roboto-MediumItalic.ttf</string>
+		<string>Roboto-Regular.ttf</string>
+		<string>Roboto-Thin.ttf</string>
+		<string>Roboto-ThinItalic.ttf</string>
+		<string>SourceSansPro-Black.ttf</string>
+		<string>SourceSansPro-BlackItalic.ttf</string>
+		<string>SourceSansPro-Bold.ttf</string>
+		<string>SourceSansPro-BoldItalic.ttf</string>
+		<string>SourceSansPro-ExtraLight.ttf</string>
+		<string>SourceSansPro-ExtraLightItalic.ttf</string>
+		<string>SourceSansPro-Italic.ttf</string>
+		<string>SourceSansPro-Light.ttf</string>
+		<string>SourceSansPro-LightItalic.ttf</string>
+		<string>SourceSansPro-Regular.ttf</string>
+		<string>SourceSansPro-SemiBold.ttf</string>
+		<string>SourceSansPro-SemiBoldItalic.ttf</string>
+	</array>
 </dict>
 </plist>
