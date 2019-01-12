@@ -12,8 +12,7 @@ import {
   View
 } from 'react-native';
 
-import Intro from './src/Components/JestTest/Intro';
-import ApiTest from './src/Components/ApiTest/ApiTest';
+import WineList from './src/Components/WineList/WineList';
 
 
 const instructions = Platform.select({
@@ -28,14 +27,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-        <ApiTest />
-        <Intro />
+        <WineList />
       </View>
     );
   }
@@ -43,7 +35,6 @@ export default class App extends Component<Props> {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
@@ -51,11 +42,9 @@ const styles = StyleSheet.create({
   welcome: {
     fontSize: 20,
     textAlign: 'center',
-    margin: 10,
   },
   instructions: {
     textAlign: 'center',
     color: '#333333',
-    marginBottom: 5,
   },
 });
